@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        const word0 = 'hello';
+        const word0translation = 'привет';
+
+        const word1 = 'room';
+        const word1translation = 'комната';
+
+
+        const word2 = 'phone';
+        const word2translation = 'телефон';
+
+
+        const word3 = 'ring';
+        const word3translation = 'кольцо';
+
+
+        const word4 = 'console';
+        const word4translation = 'приставка';
+
+        const wordsCount = 5
+
+        const finisGoodMessage = "ты супер!!"
+        const finisBadMessage = 'попробуй еще раз)))'
+
+        const minEntryPercent = 50;
+
+
+        let correctAnswarsCount = 0
+
+
+
+
+        //.............
+
+        const userAnswer0 = prompt(word0); //0
+        alert(userAnswer0 === word0translation);
+        if (userAnswer0 === word0translation) {
+            correctAnswarsCount = correctAnswarsCount + 1
+        }
+
+        const userAnswer1 = prompt(word1); //1
+        alert(userAnswer1 === word1translation);
+        if (userAnswer1 === word1translation) {
+            correctAnswarsCount = correctAnswarsCount + 1
+        }
+
+        const userAnswer2 = prompt(word2);  //2
+        alert(userAnswer2 === word2translation);
+        if (userAnswer2 === word2translation) {
+            correctAnswarsCount = correctAnswarsCount + 1
+        }
+
+        const userAnswer3 = prompt(word3);  //3
+        alert(userAnswer3 === word3translation);
+        if (userAnswer3 === word3translation) {
+            correctAnswarsCount = correctAnswarsCount + 1
+        }
+
+
+        const userAnswer4 = prompt(word4);  //4
+        alert(userAnswer4 === word4translation);
+
+
+
+        if (userAnswer4 === word4translation) {
+            correctAnswarsCount = correctAnswarsCount + 1
+        }
+
+
+        const userAnswerPresent = correctAnswarsCount / wordsCount * 100
+
+        if (userAnswerPresent > minEntryPercent) {
+            alert(finisGoodMessage);
+
+        } else {
+            alert(finisBadMessage);
+        }
+
+
+
+
+        alert(finisMessage);
+
+
+    </script>
